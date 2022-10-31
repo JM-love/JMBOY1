@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+    <script>
+        /*setInterval(function (){
+            alert("hello JMBOY")
+        },2000)*/
+
+
+        window.onload = function (){
+            let request = new XMLHttpRequest();
+            request.open("get","http://localhost/hello/JMBOY")
+           request.send();
+            request.onreadystatechange = function (){
+                console.log(request)
+            };
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
